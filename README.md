@@ -1,6 +1,6 @@
-# 🏠 halfBroke — PG Finder App
+# 🏠 halfBroke — Smart PG Finder
 
-A modern React-based web application that helps students find affordable PGs (Paying Guest accommodations) without relying on brokers.
+A modern React-based web application that helps students find affordable PG (Paying Guest) accommodations **without brokers**, featuring real-time filtering, direct contact, and full CRUD operations.
 
 ---
 
@@ -8,40 +8,49 @@ A modern React-based web application that helps students find affordable PGs (Pa
 
 * 🔍 Search PGs by **location or title**
 * 💰 Filter listings by **maximum price**
-* ➕ Add your own PG listings
-* 📄 View detailed information for each listing
+* ↕️ Sort listings (**Low → High / High → Low**)
+* ➕ Add new PG listings
+* 📄 View detailed listing pages
+* ✏️ **Edit listings (modal-based UI)**
+* 🗑️ Delete listings
+* ❤️ Mark PGs as favorites
 * 📞 Contact owner directly (Call / WhatsApp)
-* 🏠 Simulated booking option
-* 💾 Data persistence using **LocalStorage**
-* 🎨 Clean **glassmorphism UI**
+* 🏠 Simulated booking feature
+* 🧠 Optimized filtering using **useMemo**
+* 💾 Persistent data using **LocalStorage**
+* 🎨 Clean **Glassmorphism UI**
 
 ---
 
 ## 🧠 Problem It Solves
 
-Finding affordable and reliable PG accommodation is difficult for students due to:
+Students often struggle to find PG accommodations due to:
 
-* Middlemen/brokers charging extra
-* Outdated or fake listings
-* Lack of centralized platforms
+* High broker fees
+* Outdated or unreliable listings
+* Lack of direct owner contact
 
-👉 This app provides a **simple, direct, and transparent solution**
+👉 **halfBroke** provides a simple, transparent solution by enabling:
+
+* Direct owner communication
+* Easy listing management
+* Smart filtering and sorting
 
 ---
 
 ## 🛠️ Tech Stack
 
 * **React (Vite)**
-* **JavaScript (ES6)**
+* **JavaScript (ES6+)**
 * **React Router DOM**
 * **Vanilla CSS (Glass UI)**
-* **LocalStorage**
+* **LocalStorage (simulated backend)**
 
 ---
 
 ## 📂 Project Structure
 
-```
+```id="t1x6yd"
 src/
  ├── components/
  │    ├── Navbar.jsx
@@ -63,26 +72,26 @@ src/
 
 ### 1. Clone the repository
 
-```bash
+```bash id="l6m1wt"
 git clone <your-repo-link>
 cd half-broke
 ```
 
 ### 2. Install dependencies
 
-```bash
+```bash id="r4kx7n"
 npm install
 ```
 
-### 3. Run the app
+### 3. Run the development server
 
-```bash
+```bash id="6jjq2t"
 npm run dev
 ```
 
 ### 4. Open in browser
 
-```
+```id="fjx2x7"
 http://localhost:5173
 ```
 
@@ -90,57 +99,64 @@ http://localhost:5173
 
 ## ✨ Key Features Explained
 
-### 🔍 Search & Filter
+### 🔍 Smart Filtering & Sorting
 
-Users can dynamically filter PG listings based on:
-
-* Title
-* Location
-* Maximum price
+* Search by title or location
+* Filter by maximum price
+* Sort listings by price
 
 ---
 
-### ➕ Add Listing
+### 🧾 Full CRUD Operations
 
-Users can add new PGs with:
+* **Create** → Add new PG listings
+* **Read** → View detailed listing
+* **Update** → Edit via modal UI
+* **Delete** → Remove listings
 
-* Title
-* Price
-* Location
-* Image URL
-* Contact number
+---
+
+### ❤️ Favorites System
+
+* Mark/unmark listings as favorite
+* Stored persistently in LocalStorage
 
 ---
 
 ### 📞 Contact Owner
 
-* Direct call using `tel:` link
+* Direct call using `tel:`
 * WhatsApp integration using `wa.me`
+
+---
+
+### 🧠 Performance Optimization
+
+* Implemented **useMemo** to optimize filtering and sorting
+* Prevents unnecessary re-renders
 
 ---
 
 ### 💾 Data Persistence
 
-All listings are stored in **LocalStorage**, so:
-
-* Data stays after refresh
-* No backend required
+* Uses LocalStorage to simulate backend storage
+* Data remains after refresh
 
 ---
 
 ## 🎯 Future Improvements
 
-* 🗑️ Delete / Edit listings
-* ❤️ Favorites system
 * 🔐 User authentication
-* 🌍 Backend integration (Firebase / Node.js)
-* 📍 Map integration (Google Maps)
+* ☁️ Backend integration (Firebase / Node.js)
+* 🗺️ Map integration (Google Maps)
+* 📱 Mobile responsiveness improvements
+* ⭐ Reviews & ratings system
 
 ---
 
 ## 📸 Screenshots
 
-*(Add screenshots here if needed)*
+*(Add screenshots of Home, Details, Edit Modal here)*
 
 ---
 
@@ -150,15 +166,19 @@ All listings are stored in **LocalStorage**, so:
 
 ---
 
-## 📌 Note
+## 📌 Notes
 
-This project was built as part of a React end-term assignment and demonstrates:
+This project demonstrates:
 
+* Strong understanding of React fundamentals
 * Component-based architecture
-* State management
-* Routing
+* State management & hooks
 * Real-world problem solving
 
 ---
 
+## ⭐ Acknowledgment
 
+If you found this project useful, consider giving it a ⭐
+
+---
